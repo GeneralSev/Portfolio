@@ -2,20 +2,20 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import VentureCard from './VentureCard'
-
+import ventures_data from '../VentureData'
 import '../App.css';
 
 const Portfolio = () => {
 
     const [ventures, setVentures] = useState([]);
 
-    const getVentures = async (title) => {
-        const yourData = require('../ventures.json')
-        setVentures(yourData.ventures);
-    };
+    // const getVentures = async (title) => {
+    //     const yourData = require('../ventures.json')
+    //     setVentures(yourData.ventures);
+    // };
 
     useEffect(() => {
-        getVentures(); // Call getVentures when the component mounts
+        setVentures(ventures_data); // Call getVentures when the component mounts
     }, []); // The empty dependency array ensures that it runs only once on mount
 
 

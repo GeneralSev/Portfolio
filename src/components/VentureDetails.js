@@ -1,12 +1,12 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 import ventures from '../VentureData';
-  
-  // Function to get venture details by ID
-  const getVentureDetails = (id) => {
-    return ventures.find((venture) => venture.id === id) || {};
-  };
+
+// Function to get venture details by ID
+const getVentureDetails = (id) => {
+  return ventures.find((venture) => venture.id === id) || {};
+};
 
 const VentureDetails = () => {
   const { id } = useParams();
@@ -15,10 +15,20 @@ const VentureDetails = () => {
   const ventureDetails = getVentureDetails(id);
 
   return (
-    <div>
-      <h2>{ventureDetails.title}</h2>
-      <p>{ventureDetails.description}</p>
-      {/* Display additional details and images */}
+    <div className='container'>
+      <h1>{ventureDetails.title}</h1>
+      <br />
+      <Link to="/">
+        <h2>Home</h2>
+      </Link> {/* Add this line for the home button */}
+      <br />
+      <div>
+        {ventureDetails.page_layout !== 'N/A' ? (
+          <ventureDetails.page_layout />
+        ) : (
+          <p>No venture data found</p>
+        )}
+      </div>
     </div>
   );
 };
