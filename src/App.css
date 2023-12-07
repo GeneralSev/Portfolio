@@ -17,7 +17,7 @@ body {
   background-color: #212426;
 }
 
-.app {
+.portfolio {
   padding: 4rem;
 
   display: flex;
@@ -192,7 +192,7 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
-  .app {
+  .portfolio {
     padding: 4rem 2rem;
   }
 
@@ -212,7 +212,7 @@ h1 {
 }
 
 @media screen and (max-width: 400px) {
-  .app {
+  .portfolio {
     padding: 4rem 1rem;
   }
 

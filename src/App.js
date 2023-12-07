@@ -1,41 +1,37 @@
-import { useState, useEffect } from 'react';
+// import React from 'react';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import VentureCard from './VentureCard'
+// const Home = () => <div>Home Page</div>;
+// const About = () => <div>About Page</div>;
 
-import './App.css';
+// const App = () => {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/about" element={<About />} />
+//       </Routes>
+//     </Router>
+//   );
+// };
 
-const App = () =>{
+// export default App;
 
-    const [ventures, setVentures] = useState([]);
 
-    const getVentures = async (title) => {
-        const yourData = require('./ventures.json')
-        setVentures(yourData.ventures);
-      };
 
-    useEffect(() => {
-    getVentures(); // Call getVentures when the component mounts
-    }, []); // The empty dependency array ensures that it runs only once on mount
-    
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Portfolio from './components/Portfolio';
+import VentureDetails from './components/VentureDetails';
 
-    return (
-        <div className='app'>
-            <h1>Johannes Fourie Portfolio</h1>
+const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" exact element={<Portfolio />} />
+        <Route path="/venture/:id" element={<VentureDetails />} />
+      </Routes>
+    </Router>
+  );
+};
 
-            {ventures?.length > 0
-                ? (
-                    <div className='container'>
-                        { ventures.map((venture) => (<VentureCard venture={venture} />))}
-                    </div>
-                ) :(
-                    <div className='empty'>
-                        <h2>No ventures found</h2>
-                    </div>
-                )
-            }
-
-        </div>
-    );
-    }
-
-export default App
+export default App;
