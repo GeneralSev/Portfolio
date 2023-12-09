@@ -10,13 +10,16 @@
 :root {
   --font-roboto: "Roboto Slab", serif;
   --font-raleway: "Raleway", sans-serif;
-  --main-color: #f9d3b4;
-  --secondary-color: #d2ab7f;
+  --main-text-color: #E5E4DF;
+  --secondary-text-color: #C4C3BE;
+  --main-background-color: #222629;
+  --secondary-background-color: #2C3237;
+  --tertiary-color: #2C3337;
 }
 
 body {
   font-family: var(--font-roboto);
-  background-color: #212426;
+  background-color: var(--main-background-color);
 }
 
 .portfolio {
@@ -32,63 +35,13 @@ h1 {
   font-size: 3rem;
   letter-spacing: 0.9px;
   background: linear-gradient(90deg,
-      rgba(249, 211, 180, 1) 0%,
-      rgba(249, 211, 180, 0) 100%);
+  var(--main-text-color) 0%,
+  var(--tertiary-color) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
 }
-
-/* 
-.search {
-  width: 71%;
-  margin: 4rem 0 2rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 1.5rem 1.75rem;
-  border-radius: 3rem;
-  background: #1f2123;
-  -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-}
-
-.search input {
-  flex: 1;
-  border: none;
-  font-size: 1.5rem;
-  font-family: var(--font-raleway);
-  font-weight: 500;
-  padding-right: 1rem;
-
-  outline: none;
-  color: #a1a1a1;
-  background: #1f2123;
-}
-
-.search img {
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-}
-
-.search button {
-  padding: 20px 40px;
-  border-radius: 0.5rem;
-  margin-left: 15px;
-  color: #a1a1a1;
-  font-family: var(--font-raleway);
-  font-weight: 900;
-  letter-spacing: 0.75px;
-  font-size: 1.25rem;
-  cursor: pointer;
-  background: #1f2123;
-  -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-} */
 
 .empty {
   width: 100%;
@@ -101,14 +54,14 @@ h1 {
 
 h2 {
   font-size: 1.25rem;
-  color: var(--main-color);
+  color: var(--main-text-color);
   font-family: var(--font-raleway);
 }
 
 /* General styling for navigation links */
 .nav-links a {
   text-decoration: none;
-  color: var(--main-color); /* Set the color you prefer for the links */
+  color: var(--main-text-color); /* Set the color you prefer for the links */
   font-size: 1.5rem; /* Adjust the font size as needed */
   margin-right: 20px; /* Add margin between links */
   transition: color 0.3s ease; /* Smooth color transition on hover */
@@ -116,7 +69,22 @@ h2 {
 
 /* Style for navigation links on hover */
 .nav-links a:hover {
-  color: var(--secondary-color); /* Change the color on hover */
+  color: var(--secondary-text-color); /* Change the color on hover */
+}
+
+body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }
 
 .container {
@@ -149,7 +117,7 @@ h2 {
   width: 100%;
   opacity: 0;
   top: 0;
-  color: var(--main-color);
+  color: var(--main-text-color);
 }
 
 .venture-card:hover {
@@ -169,7 +137,7 @@ h2 {
 
 .venture-card div:nth-of-type(3) {
   z-index: 2;
-  background-color: #343739;
+  background-color: var(--secondary-background-color);
   padding: 16px 24px 24px 24px;
 
   position: absolute;
@@ -190,7 +158,7 @@ h2 {
 .venture-card div:nth-of-type(3) h3 {
   margin-top: 5px;
   font-family: "Roboto Slab", serif;
-  color: var(--main-color);
+  color: var(--main-text-color);
 }
 
 .venture-card:hover div:nth-of-type(2) {
@@ -210,20 +178,6 @@ h2 {
   .portfolio {
     padding: 4rem 2rem;
   }
-
-  /* .search {
-    padding: 1rem 1.75rem;
-    width: 100%;
-  }
-
-  .search input {
-    font-size: 1rem;
-  }
-
-  .search img {
-    width: 20px;
-    height: 20px;
-  } */
 }
 
 

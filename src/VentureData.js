@@ -25,6 +25,14 @@ const ventures_data = [
       "coverImage": "images/Tor Kalva.png",
       "type": "hobby",
       "page_layout": cartography_layout
+    },
+    {
+      "id": "master_thesis",
+      "title": "Master Thesis",
+      "date": "20XX-XX-XX",
+      "coverImage": "N/A",
+      "type": "project",
+      "page_layout": "N/A"
     }
   ];
   

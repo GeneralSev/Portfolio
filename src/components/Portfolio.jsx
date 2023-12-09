@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+
 import VentureCard from './VentureCard'
 import ventures_data from '../VentureData'
 import '../App.css';
@@ -12,7 +13,6 @@ const Portfolio = () => {
     useEffect(() => {
         setVentures(ventures_data); // Call getVentures when the component mounts
     }, []); // The empty dependency array ensures that it runs only once on mount
-
 
     return (
         <div className='portfolio'>
