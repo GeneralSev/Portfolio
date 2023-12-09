@@ -27,17 +27,33 @@ const About = () => {
             </div>
 
             <div className='container'>
-                <div> Welcome to my portfolio! I am passionate about...</div>
+                {/* <div> Welcome to my portfolio! I am passionate about...</div> */}
 
                 <MapContainer
                     center={[51.9194, 4.3882]}
                     zoom={2}
-                    style={{ height: '600px', width: '60%' }}
+                    style={{ height: '700px', width: '60%' }}
                 >
-                    <TileLayer
+                    {/* <TileLayer
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                    /> */}
+
+                    <TileLayer
+                        url="https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png"
+                        attribution='naga night'
                     />
+
+                    <TileLayer
+                        url="https://map1.vis.earthdata.nasa.gov/wmts-webmerc/VIIRS_CityLights_2012/default/{time}/{tilematrixset}{maxZoom}/{z}/{y}/{x}.{format}"
+                        attribution='Imagery provided by services from the Global Imagery Browse Services (GIBS), operated by the NASA/GSFC/Earth Science Data and Information System (<a href="https://earthdata.nasa.gov">ESDIS</a>) with funding provided by NASA/HQ.'
+                        minZoom='1'
+                        maxZoom='8'
+                        time=''
+                        format='jpg'
+                        tilematrixset= 'GoogleMapsCompatible_Level'
+                    />
+
                     {markers.map((marker) => (
                         <Marker key={marker.id}
                             position={[marker.lat, marker.lon]}
