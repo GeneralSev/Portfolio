@@ -16,6 +16,7 @@ const Portfolio = () => {
 
     return (
         <div className='portfolio'>
+
             <h1>Johannes Fourie Portfolio</h1>
 
             {/* Add Link to About page */}

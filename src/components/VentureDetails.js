@@ -24,7 +24,7 @@ const VentureDetails = () => {
         <Link to="/">Home</Link>
       </div>
 
-      <div>
+      <div className='container'>
         {ventureDetails.page_layout !== 'N/A' ? (
           <ventureDetails.page_layout />
         ) : (

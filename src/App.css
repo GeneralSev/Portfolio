@@ -20,11 +20,11 @@
 body {
   font-family: var(--font-roboto);
   background-color: var(--main-background-color);
+  color: var(--main-text-color);
 }
 
 .portfolio {
   padding: 4rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
