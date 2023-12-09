@@ -15,13 +15,15 @@ const VentureDetails = () => {
   const ventureDetails = getVentureDetails(id);
 
   return (
-    <div className='container'>
+    <div className='portfolio'>
+
       <h1>{ventureDetails.title}</h1>
-      <br />
-      <Link to="/">
-        <h2>Home</h2>
-      </Link> {/* Add this line for the home button */}
-      <br />
+
+      {/* Add Link to About page */}
+      <div className='nav-links'>
+        <Link to="/">Home</Link>
+      </div>
+
       <div>
         {ventureDetails.page_layout !== 'N/A' ? (
           <ventureDetails.page_layout />

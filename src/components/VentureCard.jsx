@@ -4,7 +4,7 @@ import React from 'react'
 
 const VentureCard = ({ venture }) => {
     return (
-    <div className='venture'>
+    <div className='venture-card'>
         <div>
             <p>{venture.date}</p>
         </div>

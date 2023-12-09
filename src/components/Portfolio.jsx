@@ -9,11 +9,6 @@ const Portfolio = () => {
 
     const [ventures, setVentures] = useState([]);
 
-    // const getVentures = async (title) => {
-    //     const yourData = require('../ventures.json')
-    //     setVentures(yourData.ventures);
-    // };
-
     useEffect(() => {
         setVentures(ventures_data); // Call getVentures when the component mounts
     }, []); // The empty dependency array ensures that it runs only once on mount
@@ -22,6 +17,11 @@ const Portfolio = () => {
     return (
         <div className='portfolio'>
             <h1>Johannes Fourie Portfolio</h1>
+
+            {/* Add Link to About page */}
+            <div className='nav-links'>
+                <Link to="/about">About Me</Link>
+            </div>
 
             {ventures?.length > 0
                 ? (
