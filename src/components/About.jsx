@@ -13,10 +13,14 @@ const About = () => {
                 <Link to="/">Home</Link>
             </div>
 
-            <div className='container'>
-
-                <div> Welcome to my portfolio! I am passionate about...</div>
-
+            <div className='venture-container'>
+                <br />
+                <p> Welcome to my portfolio! I am passionate about...</p>
+                <br />
+                <p>
+                    Below is a small vanity project I made for myself. The clusters and red pins show places I have lived for more than a year.
+                    The small blue markers show places I have stayed at for at least one night and which I have an associated memory of.
+                </p>
             </div>
             <br />
             <LeafletMap />
