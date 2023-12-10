@@ -12,7 +12,8 @@
   --font-raleway: "Raleway", sans-serif;
   --main-text-color: #E5E4DF;
   --secondary-text-color: #C4C3BE;
-
+  --tertiary-text-color: #A3A299;
+  
   --main-background-color: #262626;
   --secondary-background-color: #424242;
   --tertiary-color: #535353;
@@ -78,6 +79,15 @@ h2 {
   color: var(--main-text-color);
   font-family: var(--font-raleway);
 }
+
+.external-link {
+  color: var(--tertiary-text-color);
+}
+
+.external-link:hover {
+  color: var(--secondary-text-color);
+}
+
 
 /* General styling for navigation links */
 .nav-links a {
@@ -180,6 +190,29 @@ h2 {
   opacity: 1;
 }
 
+
+.venture-container {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.venture-image {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bento-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Adjust the gap between images */
+}
+
+.bento-box img {
+  width: calc(50% - 8px); /* Adjust the width of each image */
+  height: auto;
+}
 
 /* Map Styling */
 .leaflet-container {

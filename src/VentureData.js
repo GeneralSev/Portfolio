@@ -14,7 +14,7 @@ const ventures_data = [
       "id": "veloways_and_dynamo",
       "title": "Veloways and Dynamo",
       "date": "2020-07-21",
-      "coverImage": "images/veloway.jpg",
+      "coverImage": "images/thumbnails/veloway.jpg",
       "type": "project",
       "page_layout": "N/A"
     },
@@ -22,7 +22,7 @@ const ventures_data = [
       "id": "cartography",
       "title": "Cartography",
       "date": "2017-09-30",
-      "coverImage": "images/Tor Kalva.png",
+      "coverImage": "images/thumbnails/Tor Kalva.png",
       "type": "hobby",
       "page_layout": cartography_layout
     },
