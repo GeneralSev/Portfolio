@@ -12,15 +12,36 @@
   --font-raleway: "Raleway", sans-serif;
   --main-text-color: #E5E4DF;
   --secondary-text-color: #C4C3BE;
-  --main-background-color: #222629;
+
+  --main-background-color: #262626;
+  --secondary-background-color: #424242;
+  --tertiary-color: #535353;
+
+  /* --main-background-color: #222629;
   --secondary-background-color: #2C3237;
-  --tertiary-color: #2C3337;
+  --tertiary-color: #2C3337; */
 }
 
 body {
   font-family: var(--font-roboto);
   background-color: var(--main-background-color);
   color: var(--main-text-color);
+}
+
+/* Set fade in effect for body */
+body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }
 
 .portfolio {
@@ -70,21 +91,6 @@ h2 {
 /* Style for navigation links on hover */
 .nav-links a:hover {
   color: var(--secondary-text-color); /* Change the color on hover */
-}
-
-body {
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-   }
 }
 
 .container {
@@ -172,6 +178,42 @@ body {
 
 .venture-card:hover div:nth-of-type(1) {
   opacity: 1;
+}
+
+
+/* Map Styling */
+.leaflet-container {
+  background: var(--main-background-color) !important; /* Set your desired background color */
+}
+
+/* Style for the marker cluster */
+.leaflet-marker-icon.marker-cluster{
+  background-color: var(--secondary-background-color); /* Set your desired background color */
+  border-color: var(--main-background-color); /* Set your desired border color */
+  color: var(--main-text-color); /* Set your desired text color */
+}
+
+/* Style for the marker cluster */
+.marker-cluster-small div {
+  background-color: var(--main-background-color) !important; /* Set your desired background color */
+}
+
+html body .leaflet-control-container .leaflet-top .leaflet-control-zoom a.leaflet-control-zoom-in 
+{ 
+  color: var(--main-text-color); 
+  background-color: var(--secondary-background-color);
+}
+
+html body .leaflet-control-container .leaflet-top .leaflet-control-zoom a.leaflet-control-zoom-out 
+{ 
+  color: var(--main-text-color); 
+  background-color: var(--secondary-background-color);
+}
+
+.leaflet-touch .leaflet-control-attribution
+{ 
+  color: var(--main-text-color)  !important; 
+  background-color: var(--main-background-color)  !important;
 }
 
 @media screen and (max-width: 600px) {

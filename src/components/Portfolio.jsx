@@ -17,7 +17,7 @@ const Portfolio = () => {
     return (
         <div className='portfolio'>
 
-            <h1>Johannes Fourie Portfolio</h1>
+            <h1>Johannes Fourie's Portfolio</h1>
 
             {/* Add Link to About page */}
             <div className='nav-links'>
