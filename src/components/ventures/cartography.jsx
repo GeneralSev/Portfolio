@@ -8,9 +8,6 @@ const imagePaths = [
 ];
 
 
-
-
-
 export const cartography_layout = () => (
 
     <div className='venture-container'>
@@ -27,7 +24,7 @@ export const cartography_layout = () => (
         <br />
         <p>
             After days of research into map making, I decided to take a leap and started making
-            my own in a program called <a className="external-link"  href="https://inkscape.org/" target="_blank" rel="noopener noreferrer">Inkscape</a>. 
+            my own in a program called <a className="external-link" href="https://inkscape.org/" target="_blank" rel="noopener noreferrer">Inkscape</a>.
             It was just a first attempt, but I ended up using it in some of my other hobby projects.
             I am pretty happy with the final product!
         </p>
@@ -38,8 +35,8 @@ export const cartography_layout = () => (
         />
 
         <p>
-            Later on I started playing DnD with some online friends during Corona. I ended up making some maps for our gaming sessions in a program 
-            called <a className="external-link"  href="https://dungeondraft.net/" target="_blank" rel="noopener noreferrer">Dungeondraft</a>. I reckon I will continue making maps in the future for whatever other nerdy activities I end up doing.
+            Later on I started playing DnD with some online friends during Corona. I ended up making some maps for our gaming sessions in a program
+            called <a className="external-link" href="https://dungeondraft.net/" target="_blank" rel="noopener noreferrer">Dungeondraft</a>. I reckon I will continue making maps in the future for whatever other nerdy activities I end up doing.
         </p>
         <br />
 

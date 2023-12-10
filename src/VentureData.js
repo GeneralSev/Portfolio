@@ -1,5 +1,6 @@
 
 import { cartography_layout } from './components/ventures/cartography';
+import { aurecon_layout } from './components/ventures/aurecon';
 
 const ventures_data = [
     {
@@ -16,7 +17,7 @@ const ventures_data = [
       "date": "2020-07-21",
       "coverImage": "images/thumbnails/veloway.jpg",
       "type": "project",
-      "page_layout": "N/A"
+      "page_layout": aurecon_layout
     },
     {
       "id": "cartography",
