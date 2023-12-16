@@ -61,6 +61,10 @@ const visited_markers = [
     { id: 39, name: 'Yellowknife', lat: 62.4540, lon: -114.3718 },
     { id: 40, name: 'Locarno', lat: 46.1717, lon: 8.7827 },
     { id: 41, name: 'Knysna', lat: -34.0357, lon: 23.0465 },
+    { id: 42, name: 'Strydenburg', lat: -29.3372, lon: 24.0834 },
+    { id: 43, name: 'Strandfontein', lat: -31.7556, lon: 18.2272 },
+    { id: 44, name: 'Port Elizabeth', lat: -33.9608, lon: 25.6022 },
+    { id: 45, name: 'Addo Elephant Park', lat: -33.4833, lon: 25.7500 },
 ];
 
 const customLivedAtIcon = new Icon({
