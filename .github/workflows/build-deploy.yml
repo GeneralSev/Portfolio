@@ -52,7 +52,7 @@ jobs:
           path: ./build
 
       - name: Deploying to gh-pages
-        uses: generalsev/actions-gh-pages@v3
+        uses: generalsev/Portfolio@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
