@@ -41,7 +41,7 @@ export const aurecon_layout = () => (
         </p>
         <figure>
             <img className='venture-image'
-                src="../images/Dynamo bridge alignment.png"  
+                src={process.env.PUBLIC_URL +  "/images/Dynamo bridge alignment.png"}
                 alt="Dynamo bridge alignment"
             />
             <figcaption>Bridge alignment script</figcaption>
@@ -49,7 +49,7 @@ export const aurecon_layout = () => (
 
         <figure>
             <img className='venture-image'
-                src="../images/Dynamo bridge girders.png"  
+                src={process.env.PUBLIC_URL +  "/images/Dynamo bridge girders.png"} 
                 alt="Dynamo bridge girders"
             />
             <figcaption>Bridge girder script</figcaption>
@@ -57,7 +57,7 @@ export const aurecon_layout = () => (
 
         <figure>
             <img className='venture-image'
-                src="../images/Dynamo bridge steelworks.png" 
+                src={process.env.PUBLIC_URL + "/images/Dynamo bridge steelworks.png"}
                 alt="Dynamo bridge steelworks"
             />
             <figcaption>Bridge steelworks script</figcaption>
@@ -65,7 +65,7 @@ export const aurecon_layout = () => (
 
         <figure>
             <img className='venture-image'
-                src="../images/Dynamo bridge cladding.png" 
+                src={process.env.PUBLIC_URL + "/images/Dynamo bridge cladding.png"} 
                 alt="Dynamo bridge cladding"
             />
             <figcaption>Bridge cladding script</figcaption>

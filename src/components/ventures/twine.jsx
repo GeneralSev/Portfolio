@@ -12,13 +12,13 @@ export const twine_layout = () => (
             ...
         </p>
 
-        <figure>
+        {/* <figure>
             <img className='venture-image'
                 src="../images/Dynamo bridge cladding.png" 
                 alt="Dynamo bridge cladding"
             />
             <figcaption>Bridge cladding script</figcaption>
-        </figure>
+        </figure> */}
 
 
     </div >

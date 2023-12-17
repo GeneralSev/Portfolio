@@ -1,10 +1,10 @@
 import React from 'react';
 
 const imagePaths = [
-    '../images/Cartography Forest path.png',
-    '../images/Cartography Forest camp night.png',
-    '../images/Cartography Port Warehouse.png',
-    '../images/Cartography Cart attack.png',
+    '/images/Cartography Forest path.png',
+    '/images/Cartography Forest camp night.png',
+    '/images/Cartography Port Warehouse.png',
+    '/images/Cartography Cart attack.png',
 ];
 
 
@@ -30,7 +30,7 @@ export const cartography_layout = () => (
         </p>
 
         <img className='venture-image'
-            src="../images/Cartography Tor Kalva.png"  // Replace with the actual image path
+            src={process.env.PUBLIC_URL + "/images/Cartography Tor Kalva.png"}  // Replace with the actual image path
             alt="Tor Kalve Map"
         />
 
@@ -42,7 +42,7 @@ export const cartography_layout = () => (
 
         <div className="bento-box">
             {imagePaths.map((path, index) => (
-                <img key={index} src={path} alt={`Dungeondraft MapImage ${index + 1}`}
+                <img key={index} src={process.env.PUBLIC_URL + path} alt={`Dungeondraft MapImage ${index + 1}`}
                 />
             ))}
 
