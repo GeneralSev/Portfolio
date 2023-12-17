@@ -1,6 +1,6 @@
 
 // Shift + Alt + F to auto indent
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter  as Router, Route, Routes } from 'react-router-dom';
 import Portfolio from './components/Portfolio';
 import VentureDetails from './components/VentureDetails';
 import About from './components/About';
