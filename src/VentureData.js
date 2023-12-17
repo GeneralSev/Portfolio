@@ -1,6 +1,7 @@
 
 import { cartography_layout } from './components/ventures/cartography';
 import { aurecon_layout } from './components/ventures/aurecon';
+import { twine_layout } from './components/ventures/twine';
 
 const ventures_data = [
     {
@@ -26,6 +27,14 @@ const ventures_data = [
       "coverImage": "images/thumbnails/Tor Kalva.png",
       "type": "hobby",
       "page_layout": cartography_layout
+    },
+    {
+      "id": "twine",
+      "title": "Twine Adventure",
+      "date": "2016-02-12",
+      "coverImage": "images/thumbnails/twine_layout.png",
+      "type": "hobby",
+      "page_layout": twine_layout
     },
     {
       "id": "master_thesis",
