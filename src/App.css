@@ -278,3 +278,12 @@ html body .leaflet-control-container .leaflet-top .leaflet-control-zoom a.leafle
     margin: 1rem;
   }
 }
+
+/* Media query for small screens (e.g., cellphones) */
+@media (max-width: 600px) {
+  .venture-card {
+    width: 300px; /* Smaller width for small screens */
+    height: 300px; /* Smaller height for small screens */
+    margin: 1rem; /* Adjust margin as needed */
+  }
+}
