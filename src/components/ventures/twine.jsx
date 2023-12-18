@@ -30,7 +30,7 @@ export const twine_layout = () => (
 
         <div className="bento-box">
             {imagePaths.map((path, index) => (
-                <img key={index} src={process.env.PUBLIC_URL + path} alt={`Twine image ${index + 1}`}
+                <img key={index} src={process.env.PUBLIC_URL + path} alt={`Twine ${index + 1}`}
                 />
             ))}
 
