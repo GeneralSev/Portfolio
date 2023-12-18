@@ -12,7 +12,7 @@ export const twine_layout = () => (
 
     <div className='venture-container'>
         <p>
-            We have always been interested in games and fantasy worlds. I wanted to take a stab at making something myself,
+            I have always been interested in games and fantasy worlds. I wanted to take a stab at making something myself,
             so I looked around for a piece of software that I could use to create a text adventure game.
             The program I found is called <a className="external-link" href="https://twinery.org/" target="_blank" rel="noopener noreferrer">Twine</a>.
         </p>
