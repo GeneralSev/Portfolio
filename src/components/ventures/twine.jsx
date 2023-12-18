@@ -3,7 +3,7 @@ import React from 'react';
 
 const imagePaths = [
     '/images/Twine Start.png',
-    '/images/Twine Old man.png',
+    '/images/Twine Old Man.png',
     '/images/Twine Inventory.png',
     '/images/Twine Combat.png',
 ];
